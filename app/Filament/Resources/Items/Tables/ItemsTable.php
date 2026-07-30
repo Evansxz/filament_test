@@ -22,13 +22,12 @@ class ItemsTable
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('category_id')
-                    ->numeric()
+                TextColumn::make('category.name')
                     ->sortable(),
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('price')
-                    ->money()
+                    ->money('Rp.')
                     ->sortable(),
                 TextColumn::make('stock')
                     ->numeric()
