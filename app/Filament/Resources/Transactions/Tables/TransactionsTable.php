@@ -25,6 +25,9 @@ class TransactionsTable
                 TextColumn::make('user_id')
                     ->numeric()
                     ->sortable(),
+                TextColumn::make('date')
+                    ->dateTime()
+                    ->sortable(),
                 TextColumn::make('total')
                     ->numeric()
                     ->sortable(),

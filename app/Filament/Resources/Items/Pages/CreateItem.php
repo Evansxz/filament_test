@@ -12,6 +12,6 @@ class CreateItem extends CreateRecord
     #override
     protected function getRedirectUrl(): string
     {
-        return parent::getRedirectUrl()::getUrl('index');
+        return ItemResource::getUrl('index');
     }
 }
